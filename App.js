@@ -1,11 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
-import { Colors } from './constants/style';
-import LoginScreen from "./screens/LoginScreen"
-import SignupScreen from './screens/SignupScreen'
-
-
+import { StatusBar } from "expo-status-bar";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { NavigationContainer } from "@react-navigation/native";
+import { Colors } from "./constants/style";
+import LoginScreen from "./screens/LoginScreen";
+import SignupScreen from "./screens/SignupScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +12,7 @@ function AuthStack() {
     <Stack.Navigator
       screenOptions={{
         headerStyle: { backgroundColor: Colors.primary500 },
-        headerTintColor: 'white',
+        headerTintColor: "white",
         contentStyle: { backgroundColor: Colors.primary100 },
       }}
     >
@@ -29,7 +27,7 @@ function AuthenticatedStack() {
     <Stack.Navigator
       screenOptions={{
         headerStyle: { backgroundColor: Colors.primary500 },
-        headerTintColor: 'white',
+        headerTintColor: "white",
         contentStyle: { backgroundColor: Colors.primary100 },
       }}
     >
@@ -46,14 +44,12 @@ function Navigation() {
   );
 }
 
-
 export default function App() {
   return (
     <>
-    <StatusBar style="light" />
+      <StatusBar style="light" />
 
-    <Navigation />
-  </>
+      <Navigation />
+    </>
   );
 }
-
